@@ -1,0 +1,17 @@
+{
+  "name": "juice-shop-login-demo",
+  "version": "1.0.0",
+  "description": "A small Juice Shop-style login form demonstrating secure vs. vulnerable handling of SQL Injection and XSS, with client-side and server-side validation.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:vuln": "node server.js --vuln"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
+  }
+}

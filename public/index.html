@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juice Shop — Login (security demo)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <span class="logo">🧃 OWASP Juice Shop</span>
+    <span class="tag">login security demo</span>
+  </header>
+
+  <main>
+    <div id="mode-banner" class="banner" hidden></div>
+
+    <section class="card">
+      <h1>Log in</h1>
+
+      <!-- No HTML <form> submit: we validate in JS first, then fetch(). -->
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="text" autocomplete="off" placeholder="you@example.com" />
+        <p class="error" id="email-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="off" placeholder="At least 8 characters" />
+        <p class="error" id="password-error"></p>
+      </div>
+
+      <button id="login-btn" type="button">Log in</button>
+
+      <!-- Server response is shown here. -->
+      <div id="result" class="result" aria-live="polite"></div>
+    </section>
+
+    <p class="hint">
+      Try: <code>admin@juice-sh.op</code> / <code>admin123</code>
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
